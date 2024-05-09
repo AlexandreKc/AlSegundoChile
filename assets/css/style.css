@@ -10,57 +10,11 @@
 body{
     background-color: var(--color4);
 }
-/* Configuraciones NavBar */
-.contenedor-nav{
-    align-items: center;
-    display: flex;
-    background-color: var(--color3);
-    justify-content: space-between;
-}
-.contenedor-nav a{
-    text-decoration: none;
-    font-family: "Poetsen One", sans-serif;
-}
-.imagen_logo_nav img{
-    border-radius: 10%;
-}
-.link-inicio{
-    color: white;
-    padding-left: 15px;
-    font-size: 25px;
-}
-.link-not-imp{
-    color: white;
-    padding-left: 15px;
-    font-size: 25px;
-}
-.link-tiempo{
-    color: white;
-    padding-left: 15px;
-    font-size: 25px;    
-}
-.link-contacto{
-    color: white;
-    padding-left: 15px;
-    font-size: 25px;
-}
-.lado_derecho{
-    padding-right: 15px;
-    text-align: right;
-}
-.boton-rl{
-    border: none;
-    background-color: transparent;
-    font-family: "Poetsen One", sans-serif;
-    font-size: 25px;
-    color: white;
-    padding-bottom: 15px;
+.contenedor-general{
+    padding-right: 0px;
 }
 
+/* NavBar */
 
 /* breadcrum */
 
-
-
-
-/* Responsive */
