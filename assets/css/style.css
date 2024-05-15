@@ -1,14 +1,19 @@
 :root{
-    --color1:#f2e8c4;
-    --color2:#98d9b6;
-    --color3:#3ec9a7;
-    --color4:#2b879e;
-    --color5:#616668;
+    --color1:#0c0c22;
+    --color2:#21213b;
+    --color3:#0052a5;
 }
 
 /* CONFIGURACIONES GENERALES */
 body{
-    background-color: var(--color4);
+    background-color: var(--color1);
+}
+.parallax{
+    background-image: url('../img/background-image.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 
@@ -16,6 +21,86 @@ body{
 .navbar{
     font-family: "Poetsen One", sans-serif;
     background-color: var(--color2) !important;
+    box-shadow: 0px 2px 4px var(--color1) !important;
+}
+/* Links navbar */
+.navbar li a{
+    color: white !important;
+    font-size:20px;
+}
+.navbar li a:hover{
+    color: var(--color3) !important;
+    box-shadow: inset 0 0 15px var(--color3), 0 0 15px var(--color3);
+}
+
+/* Logo */
+.navbar-brand{
+    font-size: 35px;
+    color: white !important;
+}
+.navbar-brand img{
+    border-radius: 30%;
+}
+.navbar-brand img:hover{
+    box-shadow: inset 0 0 15px var(--color3), 0 0 15px var(--color3);
 }
 /* breadcrum */
 
+
+/* Seccion info */
+.contenedor-info{
+    align-content: center;
+}
+.informacion-sec{
+    padding: 25px !important;
+}
+.informacion-sec img{
+    border: 8px solid var(--color3);
+    box-shadow: inset 0 0 15px var(--color3), 0 0 15px var(--color3);
+    border-radius: 30% !important;
+}
+.informacion-sec-text{
+    padding-top: 10%;
+}
+.informacion-sec-text h1{
+    font-family: "Poetsen One", sans-serif;
+    color: white;
+}
+.informacion-sec-text p{
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+}
+.titulo-sobremi{
+    padding:40px;
+    background-color: var(--color2);
+    box-shadow: inset 0 0 15px var(--color1), 0 0 15px var(--color1);
+    border-radius: 10px;
+}
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .titulo-sobremi {
+        font-size: 40px; /* Reducir el tamaño del título para pantallas pequeñas */
+    }
+
+    .info-sobremi {
+        font-size: 10px; /* Reducir el tamaño del texto para pantallas pequeñas */
+    }
+}
+@media (max-width: 768px) {
+    .contenedor-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informacion-sec,
+    .informacion-sec-text {
+        width: 100%;
+    }
+}
