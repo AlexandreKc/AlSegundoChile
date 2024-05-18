@@ -50,7 +50,7 @@
                         <a class="nav-link" href="#sobre_mi">SobreMi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contactame">Contacto</a>
+                        <a class="nav-link" href="#contactame">Contacto EMAIL</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#carrusel">Destacado</a>
@@ -116,19 +116,39 @@
         <!-- Sección de contacto -->
         <div class="row"  id="contactame">
             <div class="col-12">
-            <h2 class="informacion-relevante">Recibe información E-Mail</h2>
+            <h2 class="informacion-relevante">Información E-Mail</h2>
             </div>
         </div>
-        <div class="contacto col-12 col-xl-12 col-sm-12 col-xs-12 col-12">
-
-        </div>
-
-        <!-- Footer -->
-        <div class="footer__contenedor row">
-            <div class="footer col-xl-12 col-sm-12 col-xs-12 col-12 p-5">
-                <p class="info"> Ultima actualización 16-05-2024</p>
+        <div class="row">
+            <div class="relleno col-1 col-xl-1 col-sm-1 col-xs-1 col-1"></div>
+            <div class="contacto col-10 col-xl-10 col-sm-10 col-xs-10 col-10">
+                <form  class="formulario__contenedor" id="myForm">
+                    <!-- Nombre completo -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label pb-2">Ingrese su nombre</label>
+                        <input type="Text" class="form-control" id="nombre" placeholder="Indique su nombre" name="nombre">
+                        <!-- Mensaje de error si el campo está vacío -->
+                        <div id="nombreERROR" class="text-danger"></div>
+                    </div>
+                    <!-- Mensaje -->
+                    <div class="mb-3 pt-3 pb-3">
+                        <label for="nota" class="form-label pb-2">Nota</label>
+                        <textarea class="form-control" id="Recado" rows="3" placeholder="Nota o petición" name="nota"></textarea>
+                        <div id="notaERROR" class="text-danger"></div>
+                    </div>
+                    <!-- Correo -->
+                    <div class="mb-3 pb-3">
+                        <label for="correo" class="form-label pb-2">Correo</label>
+                        <input type="Text" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Indique su correo" name="correo">
+                        <div id="correoERROR" class="text-danger"></div>
+                    </div>
+                    <button type="submit" value="Enviar" class="btn btn-enviar">Enviar</button>
+                    <div id="info_invalida" class="text-danger"></div>
+                    <div id="info_valida" class="text-success"></div>
+                </form>
             </div>
         </div>
+
     </div>
     <!-- Glider js -->
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.9/glider.min.js"></script>
@@ -138,5 +158,6 @@
     <!-- JS & JQuery -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/action.js"></script>
+    <script src="./assets/js/formulario.js"></script>
 </body>
 </html>

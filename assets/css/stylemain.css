@@ -11,6 +11,7 @@
 }
 .informacion-sec{
     padding: 25px !important;
+    padding-left: 5% !important;
 }
 .informacion-sec img{
     border: 8px solid var(--color3);
@@ -70,7 +71,25 @@
     box-shadow: inset 0 0 15px var(--color3), 0 0 15px var(--color3);   
 }
 
+/* Contenedor de formulario */
+.formulario__contenedor{
+    padding:30px;
+    background-color: var(--color2);
+    border-radius: 10px;
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 30px;
+    box-shadow: inset 0 0 15px var(--color1), 0 0 15px var(--color1);
 
+}
+.btn-enviar{
+    background-color: white;
+    border: none;
+}
+.btn-enviar:hover{
+    background-color: white;
+    color: black;
+}
 
 
 /* Responsive */
@@ -95,5 +114,14 @@
     }
     .carousel__lista p{
         font-size: 10px;
+    }
+    #nombreERROR{
+        font-size: 15px;
+    }
+    #notaERROR{
+        font-size: 15px;
+    }
+    #correoERROR{
+        font-size: 15px;
     }
 }

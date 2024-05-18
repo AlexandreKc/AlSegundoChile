@@ -62,15 +62,6 @@ body, html{
 
 
 
-/* Pie de pagina */
-.footer{
-    background-color: var(--color2);
-    font-family: "Poetsen One", sans-serif;
-    color: white;
-    margin:0px;
-}
-
-
 
 /* Responsive */
 @media screen and (max-width: 768px){
