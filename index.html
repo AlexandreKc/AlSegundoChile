@@ -27,6 +27,13 @@
     <link href="./assets/css/normalize.css" rel="stylesheet">
     <!-- Glider JS -->
     <link href="https://cdn.jsdelivr.net/npm/glider-js@1.7.9/glider.min.css" rel="stylesheet">
+    <!-- EmailJS -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('uaRAVtLPSN9PTfzhW')
+    </script>
 
 </head>
 <body>
@@ -122,30 +129,32 @@
         <div class="row">
             <div class="relleno col-1 col-xl-1 col-sm-1 col-xs-1 col-1"></div>
             <div class="contacto col-10 col-xl-10 col-sm-10 col-xs-10 col-10">
-                <form  class="formulario__contenedor" id="myForm">
+                <form  class="formulario__contenedor" id="myForm" action="https://formsubmit.co/sebastiancarrera2021@gmail.com" method="POST">
                     <!-- Nombre completo -->
                     <div class="mb-3">
                         <label for="nombre" class="form-label pb-2">Ingrese su nombre</label>
-                        <input type="Text" class="form-control" id="nombre" placeholder="Indique su nombre" name="nombre">
+                        <input type="Text" class="form-control" id="from_name" placeholder="Indique su nombre" name="from_name">
                         <!-- Mensaje de error si el campo está vacío -->
                         <div id="nombreERROR" class="text-danger"></div>
                     </div>
                     <!-- Mensaje -->
                     <div class="mb-3 pt-3 pb-3">
                         <label for="nota" class="form-label pb-2">Nota</label>
-                        <textarea class="form-control" id="Recado" rows="3" placeholder="Nota o petición" name="nota"></textarea>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Nota o petición" name="message"></textarea>
                         <div id="notaERROR" class="text-danger"></div>
                     </div>
                     <!-- Correo -->
                     <div class="mb-3 pb-3">
                         <label for="correo" class="form-label pb-2">Correo</label>
-                        <input type="Text" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Indique su correo" name="correo">
+                        <input type="Text" class="form-control" id="email_id" aria-describedby="emailHelp" placeholder="Indique su correo" name="email_id">
                         <div id="correoERROR" class="text-danger"></div>
                     </div>
-                    <button type="submit" value="Enviar" class="btn btn-enviar">Enviar</button>
+                    <button type="submit" value="Enviar" id="button"  class="btn btn-enviar">Enviar</button>
                     <div id="info_invalida" class="text-danger"></div>
                     <div id="info_valida" class="text-success"></div>
                 </form>
+                
+
             </div>
         </div>
 
