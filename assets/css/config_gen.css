@@ -9,6 +9,7 @@
 /* CONFIGURACIONES GENERALES */
 body{
     background-color: var(--color1);
+    height: 100vh;
 }
 body, html{
     overflow-x: hidden;

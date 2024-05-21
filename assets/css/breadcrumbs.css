@@ -13,3 +13,6 @@
     margin: 0 5px;
     color: gray;
 }
+.breadcrumbs li{
+    padding-left: 10px;
+}

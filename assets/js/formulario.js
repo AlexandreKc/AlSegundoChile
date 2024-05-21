@@ -58,6 +58,7 @@ myForm.addEventListener('submit', (e) => {
         document.getElementById('info_valida').innerHTML = '<p class="error">Información enviada.</p>';
     } else {
         document.getElementById('info_invalida').innerHTML = '<p class="error">Campos inválidos.</p>';
+        myForm.reset();
     }
 });
 
@@ -81,7 +82,7 @@ document.getElementById('myForm')
       alert(JSON.stringify(err));
     });
 });
-
+myForm.reset();
 
 
 });
